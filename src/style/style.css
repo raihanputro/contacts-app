@@ -31,9 +31,14 @@ img {
     display: flex; /*jadi ke samping*/
     align-items: center;
     margin: 10px 0;
-    border: 1px solid black;
+    border: 5px dashed black;
     padding: 16px;
     border-radius: 8px;
+}
+
+.contact-item:hover {
+    background-color: #F5EDDC;
+    border: 5px dashed #EB1D36;
 }
 
 .contact-item__image img {
@@ -44,18 +49,12 @@ img {
 .contact-item__body {
     margin-left: 8px;
     padding-left: 8px;
-    border-left: 1px solid #aaa;
+    border-left: 3px dashed black;
     flex: 1;
 }
 
-.test {
-    text-decoration: none;
-    color: #aaa;
-}
-
-.test:hover {
-    text-decoration: none;
-    color: rgb(255, 0, 0);
+.contact-item__body:hover {
+    border-left: 3px dashed #EB1D36;
 }
 
 .contact-item__username {
@@ -66,7 +65,7 @@ img {
 
 .contact-item__username:hover {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: #FA9494;
 }
 
 .contact-item__name {
