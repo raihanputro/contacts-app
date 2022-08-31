@@ -12,12 +12,12 @@ import React from "react";
 
 class ContactItemBody extends React.Component{
     render() {
-        const { name, tag, igUrl } = this.props;
+        const { name, username, igUrl } = this.props;
 
         return (
             <div className="contact-item__body">
                 <h3 className="contact-item__name">{name}</h3>
-                <a className="contact-item__username" href={igUrl} target="_blank" rel="noopener noreferrer"> @{tag}</a>  
+                <a className="contact-item__username" href={igUrl} target="_blank" rel="noopener noreferrer"> @{username}</a>  
             </div>
         )
     }

@@ -37,8 +37,8 @@ img {
 }
 
 .contact-item:hover {
-    background-color: #F5EDDC;
-    border: 5px dashed #EB1D36;
+    background-color: #B9FFF8;
+    border: 5px dashed #6FEDD6;
 }
 
 .contact-item__image img {
@@ -49,12 +49,7 @@ img {
 .contact-item__body {
     margin-left: 8px;
     padding-left: 8px;
-    border-left: 3px dashed black;
     flex: 1;
-}
-
-.contact-item__body:hover {
-    border-left: 3px dashed #EB1D36;
 }
 
 .contact-item__username {
@@ -65,7 +60,8 @@ img {
 
 .contact-item__username:hover {
     text-decoration: none;
-    color: #FA9494;
+    color: #FF9551;
+    font-weight: bold;
 }
 
 .contact-item__name {
@@ -78,12 +74,17 @@ img {
 
 .contact-item__delete {
     padding: 8px;
-    font-size: 18px;
-    background-color: orangered;
-    color: white;
-    border: 0;
-    border-radius: 4px;
+    font-size: 30px;
+    color: red;
     cursor: pointer;
+    font-family: 'Silkscreen', cursive;
+    font-weight: bold;
+    border: none;
+    background-color: unset;
+}
+
+.contact-item__delete:hover {
+    font-size: 35px;
 }
 
 .contact-input {

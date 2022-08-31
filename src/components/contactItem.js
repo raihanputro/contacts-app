@@ -1,6 +1,7 @@
 import React from "react";
 import ContactItemBody from "./contactItemBody";
 import ContactItemImage from "./contactItemImage";
+import DeleteButton from "./deleteButton";
 
 // function ContactItem({ imgUrl, name, tag, igUrl }){
 //     return (
@@ -18,12 +19,13 @@ class ContactItem extends React.Component{
     }
 
     render(){ 
-        const {imgUrl, name, tag, igUrl} =  this.props;
+        const {imgUrl, name, username, igUrl, id, onDelete} =  this.props;
 
         return (
             <div className="contact-item">
                 <ContactItemImage imgUrl={imgUrl} />
-                <ContactItemBody name={name} tag={tag} igUrl={igUrl} />
+                <ContactItemBody name={name} username={username} igUrl={igUrl} />
+                <DeleteButton id={id} onDelete={onDelete} />
             </div>
         )
     }
